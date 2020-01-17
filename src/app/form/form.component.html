@@ -1,0 +1,6 @@
+<form [formGroup]="myForm" (submit)="onSubmit()">
+    <label for="newMessage">New message</label>
+    <input type="text" id="newMessage" formControlName="newMessage">
+
+    <button type="submit">Add new message from {{curFormIndex}} form</button>
+</form>
